@@ -1,0 +1,26 @@
+accounts:
+  - name: validator-a
+    coins: ["1000000stake", "1000000000coina"]
+  - name: alice
+    coins: ["1000000stake", "1000000coina"]
+    address: "chaina1v2hn2yg8hxwcsqp5w2ghan6ufvztaz5tg0qd89"
+validator:
+  name: validator-a
+  staked: "1000000stake"
+build:
+  binary: chain-a
+client:
+  vuex:
+    path: "vue/src/store"
+genesis:
+  chain_id: "chain-a"
+init:
+  home: "$HOME/.chain-a"
+host:
+  rpc: ":26657"
+  api: ":1317"
+  grpc: ":9090"
+  dev-ui: ":12345"
+  p2p: ":26659"
+  prof: ":6060"
+  frontend: ":8080"
