@@ -17,7 +17,7 @@ Please follow these instructions to complete the workshop:
 1. [Setup Environment](./docs/setup.md)
 2. [Run chains](./docs/chains.md)
 3. [Configure clients](./docs/clients.md)
-4. [Connection Handshake](./docs/connection_handshake.md)
+4. [Connection Handshake](./docs/connection.md)
 5. [Channel Handshake](./docs/channel_handshake.md)
 6. [Relay Packets (Transfer Tokens)](./docs/relay.md) 
 

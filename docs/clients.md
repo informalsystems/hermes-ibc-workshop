@@ -1,5 +1,5 @@
 
-# Create Clients
+# Clients
 
 In this section we will configure the light clients for Hermes 
 
