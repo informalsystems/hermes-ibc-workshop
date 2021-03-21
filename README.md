@@ -15,7 +15,7 @@ This workshop will be presented at the [HackAtom RU](https://hackatom-ru.devpost
 Please follow these instructions to complete the workshop:
 
 1. [Setup Environment](./docs/setup.md)
-2. [Run chains](./docs/start_chains.md)
+2. [Run chains](./docs/chains.md)
 3. [Configure clients](./docs/config_clients.md)
 4. [Connection Handshake](./docs/connection_handshake.md)
 5. [Channel Handshake](./docs/channel_handshake.md)
