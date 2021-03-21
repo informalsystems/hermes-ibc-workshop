@@ -1,0 +1,43 @@
+[global]
+timeout = '10s'
+strategy = 'naive'
+log_level = 'info'
+
+[[chains]]
+id = 'chain-a'
+rpc_addr = 'tcp://localhost:26657'
+grpc_addr = 'tcp://localhost:9090'
+account_prefix = 'chaina'
+key_name = 'alice_key'
+store_prefix = 'ibc'
+gas = 3000000
+clock_drift = '5s'
+trusting_period = '14days'
+
+[chains.trust_threshold]
+numerator = '1'
+denominator = '3'
+
+[[chains]]
+id = 'chain-b'
+rpc_addr = 'tcp://localhost:26557'
+grpc_addr = 'tcp://localhost:9091'
+account_prefix = 'chainb'
+key_name = 'bob_key'
+store_prefix = 'ibc'
+gas = 3000000
+clock_drift = '5s'
+trusting_period = '14days'
+
+[chains.trust_threshold]
+numerator = '1'
+denominator = '3'
+
+[[connections]]
+a_chain = 'chain-a'
+b_chain = 'chain-b'
+
+[[connections.paths]]
+a_port = 'transfer'
+b_port = 'transfer'
+
