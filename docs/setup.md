@@ -12,10 +12,13 @@ Please check their docs for [installation instructions](https://github.com/tende
 
 ## Hermes (IBC Relayer)
 
-You will also need to install the Hermes IBC Relayer for this workshop. Please follow the [instructions to install](https://hermes.informal.systems/installation.html) it locally on your mahcine.
+You will also need to install the Hermes IBC Relayer for this workshop. 
+
+Please follow the [instructions to install](https://hermes.informal.systems/installation.html) it locally on your mahcine.
 
 > Note: Currently in order to run Hermes for this workshop, after cloning the project please checkout the andy/starport branch
 
 ```
 git checkout andy/starport
 ```
+

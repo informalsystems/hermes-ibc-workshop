@@ -2,39 +2,6 @@
 #!/bin/sh
 
 
-# Create connection chain-a -> chain-b
-
-# conn-init
-hermes -c ~/.hermes/starport.toml tx raw conn-init chain-a chain-b 07-tendermint-0 07-tendermint-0 | jq
-
-# conn-try
-hermes -c ~/.hermes/starport.toml tx raw conn-try chain-b chain-a 07-tendermint-0 07-tendermint-0 -s connection-0 | jq
-
-# conn-ack
-hermes -c ~/.hermes/starport.toml tx raw conn-ack chain-a chain-b 07-tendermint-0 07-tendermint-0 -d connection-0 -s connection-0 | jq
-
-# conn-confirm
-hermes -c ~/.hermes/starport.toml tx raw conn-confirm chain-b chain-a 07-tendermint-0 07-tendermint-0 -d connection-0 -s connection-0 | jq
-
-
-# Query connection
-hermes -c ~/.hermes/starport.toml query connection end chain-a connection-0 | jq
-hermes -c ~/.hermes/starport.toml query connection end chain-b connection-0 | jq
-
-# Create a channel 
-
-# chan-open-init
-hermes -c ~/.hermes/starport.toml tx raw chan-open-init chain-a chain-b connection-0 transfer transfer -o UNORDERED | jq
-
-# chan-open-try
-hermes -c ~/.hermes/starport.toml tx raw chan-open-try chain-b chain-a connection-0 transfer transfer -s channel-0 | jq
-
-# chan-open-ack
-hermes -c ~/.hermes/starport.toml tx raw chan-open-ack chain-a chain-b connection-0 transfer transfer -d channel-0 -s channel-0 | jq
-
-# chan-open-confirm
-hermes -c ~/.hermes/starport.toml tx raw chan-open-confirm chain-b chain-a connection-0 transfer transfer -d channel-0 -s channel-0 | jq
-
 # Send packets
 
 # query balance - alice
