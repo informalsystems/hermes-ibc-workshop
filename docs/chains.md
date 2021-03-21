@@ -28,7 +28,17 @@ This command builds the executable `chain-a`
 starport build
 ```
 
+### Start chain-a
+
+In order to start the chain-a run the starport command below:
+
+```
+starport serve -c config.yml
+```
+
 ### Restore key (Alice)
+
+Open another terminal prompt in the same location (chain-a folder)
 
 This command restores a key for a user in `chain-a` that we will be using during the workshop.
 
@@ -42,17 +52,9 @@ When prompted for the mnemonic please enter the following words:
 oxygen soap solid wave swim dumb piece pass bronze horn bronze sweet acid radio reform clump team behind deer anxiety volcano reform jewel inspire
 ```
 
-### Start chain-a
-
-In order to start the chain-a run the starport command below:
-
-```
-starport serve -c config.yml
-```
- 
 ### Query Alice's balance
 
-Open another terminal prompt in the same location (chain-a folder) and run the command below to check Alice's balance:
+Run the command below to check Alice's balance:
 
 ```
 chain-a --node tcp://localhost:26657 query bank balances $(chain-a --home $HOME/.chain-a keys --keyring-backend="test" show alice -a)
@@ -78,7 +80,17 @@ This command builds the executable `chain-b`
 starport build
 ```
 
+### Start chain-b
+
+In order to start the chain-b run the starport command below:
+
+```
+starport serve -c config.yml
+```
+ 
 ### Restore key (Bob)
+
+Open another terminal prompt in the same location (chain-b folder)
 
 This command restores a key for a user in `chain-b` that we will be using during the workshop.
 
@@ -92,17 +104,9 @@ When prompted for the mnemonic please enter the following words:
 become observe excess guitar wreck planet treat artist oblige depart fix deposit uphold drift sick amount agree frame pilot transfer nerve guitar section tail
 ```
 
-### Start chain-b
-
-In order to start the chain-b run the starport command below:
-
-```
-starport serve -c config.yml
-```
- 
 # Query Bob's balance
 
-Open another terminal prompt in the same location (chain-b folder) and run the command below to check Bob's balance:
+Run the command below to check Bob's balance:
 
 ```
 chain-b --node tcp://localhost:26557 query bank balances $(chain-b --home $HOME/.chain-b keys --keyring-backend="test" show bob -a)
