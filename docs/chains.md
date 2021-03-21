@@ -111,3 +111,7 @@ Run the command below to check Bob's balance:
 ```
 chain-b --node tcp://localhost:26557 query bank balances $(chain-b --home $HOME/.chain-b keys --keyring-backend="test" show bob -a)
 ```
+
+## Next Steps
+
+Next we will [setup the clients](./clients.md)

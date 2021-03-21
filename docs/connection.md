@@ -41,3 +41,7 @@ hermes -c ./config.toml query connection end chain-a connection-0 | jq
 ```
 hermes -c ./config.toml query connection end chain-b connection-0 | jq
 ```
+
+## Next Steps
+
+Next we will [establish the channel handshake](./channel.md)

@@ -22,3 +22,6 @@ Please follow the [instructions to install](https://hermes.informal.systems/inst
 git checkout andy/starport
 ```
 
+## Next Steps
+
+Next we will [start the chains](./chains.md)

@@ -122,3 +122,7 @@ Query the client state
 ```
 hermes -c ./config.toml query client state chain-a 07-tendermint-0 | jq
 ```
+
+## Next Setps
+
+Next we will [establish a connection handshake](./connection.md)

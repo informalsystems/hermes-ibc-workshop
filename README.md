@@ -23,7 +23,7 @@ Please follow these instructions to complete the workshop:
 
 ## References
 
-*  [Interchain Standards](https://github.com/cosmos/ics)
+* [Interchain Standards](https://github.com/cosmos/ics)
 * [IBC Protocol Website](https://ibcprotocol.org)
 * [IBC Modules and Relayer in Rust](https://github.com/informalsystems/ibc-rs)
 * [Hermes Documentation](https://hermes.informal.systems)

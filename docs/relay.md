@@ -128,3 +128,7 @@ Query Bob's balance to ensure his token balance for the `ibc/[hash]` denom shows
 ```
 chain-b --node tcp://localhost:26557 query bank balances $(chain-b --home $HOME/.chain-b keys --keyring-backend="test" show bob -a)
 ```
+
+## Congratulations
+
+If you successfully executed all the previous steps you should have a better understanding now how IBC prottocol works to connect two chains and transfer some tokens.

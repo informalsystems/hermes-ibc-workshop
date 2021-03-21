@@ -41,3 +41,7 @@ hermes -c ./config.toml query channel end chain-a transfer channel-0 | jq
 ```
 hermes -c ./config.toml query channel end chain-b transfer channel-0 | jq
 ```
+
+## Next Steps 
+
+Next we will [relay the packets and transfer some tokens](./relay.md)
