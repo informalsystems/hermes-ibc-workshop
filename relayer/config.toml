@@ -18,6 +18,31 @@ trusting_period = '14days'
 numerator = '1'
 denominator = '3'
 
+[chains.peers]
+primary = 'E31A03B0BED7D63375EE717CDD430123B266C1C3'
+
+[[chains.peers.light_clients]]
+peer_id = 'E31A03B0BED7D63375EE717CDD430123B266C1C3'
+address = 'tcp://localhost:26657'
+timeout = '10s'
+trusted_header_hash = 'F95913B4CA5E0466E5CBD98968947D29908146CD77BC325721DECA266EDB0E39'
+trusted_height = '647'
+
+[chains.peers.light_clients.store]
+type = 'disk'
+path = '/Users/andynogueira/.hermes/chains/chain-a/ibc/E31A03B0BED7D63375EE717CDD430123B266C1C3'
+
+[[chains.peers.light_clients]]
+peer_id = '2427F8D914A6862279B3326FA64F76E3BC06DB2E'
+address = 'tcp://localhost:26657'
+timeout = '10s'
+trusted_header_hash = 'B5BA619CB6D54BA41185FAECB852DE1F96B6FB77CEC47B90B71F17EEDB2C241B'
+trusted_height = '748'
+
+[chains.peers.light_clients.store]
+type = 'disk'
+path = '/Users/andynogueira/.hermes/chains/chain-a/ibc/2427F8D914A6862279B3326FA64F76E3BC06DB2E'
+
 [[chains]]
 id = 'chain-b'
 rpc_addr = 'tcp://localhost:26557'
@@ -32,6 +57,31 @@ trusting_period = '14days'
 [chains.trust_threshold]
 numerator = '1'
 denominator = '3'
+
+[chains.peers]
+primary = '365C8F06F885997701AAE4CD0140319A8692A2F0'
+
+[[chains.peers.light_clients]]
+peer_id = '365C8F06F885997701AAE4CD0140319A8692A2F0'
+address = 'tcp://localhost:26557'
+timeout = '10s'
+trusted_header_hash = '18F77F0EE7886BBA73AB823A1170AD4775C8D18D9746F7F58AFA1413C5A57691'
+trusted_height = '578'
+
+[chains.peers.light_clients.store]
+type = 'disk'
+path = '/Users/andynogueira/.hermes/chains/chain-b/ibc/365C8F06F885997701AAE4CD0140319A8692A2F0'
+
+[[chains.peers.light_clients]]
+peer_id = 'A885BB3D3DFF6101188B462466AE926E7A6CD51E'
+address = 'tcp://localhost:26557'
+timeout = '10s'
+trusted_header_hash = 'A29CAD1BF2BAA3F7F36A7FADD51F61F16F3A2365A08EF976420A63FF05E1CDF6'
+trusted_height = '642'
+
+[chains.peers.light_clients.store]
+type = 'disk'
+path = '/Users/andynogueira/.hermes/chains/chain-b/ibc/A885BB3D3DFF6101188B462466AE926E7A6CD51E'
 
 [[connections]]
 a_chain = 'chain-a'
