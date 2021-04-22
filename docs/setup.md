@@ -7,7 +7,7 @@ Please install all the required dependencies in order to run the workshop instru
 
 This workshop leverages the amazing `Starport` tool created by [https://github.com/tendermint/starport] that allows you to create [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) chains in a very developer friendly way.
 
-Please check their docs for [installation instructions](https://github.com/tendermint/starport/blob/develop/docs/1%20Introduction/2%20Install.md)
+Please check their docs for [installation instructions](https://docs.starport.network/intro/install.html)
 
 
 ## Hermes (IBC Relayer)
