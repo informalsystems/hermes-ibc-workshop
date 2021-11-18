@@ -1,43 +1,44 @@
 [global]
-timeout = '10s'
-strategy = 'naive'
 log_level = 'info'
 
-[[chains]]
-id = 'chain-a'
-rpc_addr = 'tcp://localhost:26657'
-grpc_addr = 'tcp://localhost:9090'
-account_prefix = 'chaina'
-key_name = 'alice_key'
-store_prefix = 'ibc'
-gas = 3000000
-clock_drift = '5s'
-trusting_period = '14days'
+[rest]
+enabled = true
+host = '127.0.0.1'
+port = 4010
 
-[chains.trust_threshold]
-numerator = '1'
-denominator = '3'
+[telemetry]
+enabled = true
+host = '127.0.0.1'
+port = 4011
 
 [[chains]]
-id = 'chain-b'
-rpc_addr = 'tcp://localhost:26557'
-grpc_addr = 'tcp://localhost:9091'
-account_prefix = 'chainb'
-key_name = 'bob_key'
+id = 'earth'
+rpc_addr = 'http://127.0.0.1:26659'
+grpc_addr = 'http://127.0.0.1:9095'
+websocket_addr = 'ws://localhost:26659/websocket'
+rpc_timeout = '10s'
+account_prefix = 'earth'
+key_name = 'tellurian'
 store_prefix = 'ibc'
-gas = 3000000
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'stake' }
+gas_adjustment = 0.1
 clock_drift = '5s'
 trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
 
-[chains.trust_threshold]
-numerator = '1'
-denominator = '3'
-
-[[connections]]
-a_chain = 'chain-a'
-b_chain = 'chain-b'
-
-[[connections.paths]]
-a_port = 'transfer'
-b_port = 'transfer'
-
+[[chains]]
+id = 'mars'
+rpc_addr = 'http://127.0.0.1:26559'
+grpc_addr = 'http://127.0.0.1:9096'
+websocket_addr = 'ws://localhost:26559/websocket'
+rpc_timeout = '10s'
+account_prefix = 'mars'
+key_name = 'greenman'
+store_prefix = 'ibc'
+max_gas = 2000000
+gas_price = { price = 0.001, denom = 'stake' }
+gas_adjustment = 0.1
+clock_drift = '5s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
