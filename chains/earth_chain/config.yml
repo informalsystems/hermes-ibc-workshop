@@ -1,0 +1,27 @@
+accounts:
+  - name: earthling
+    coins: ["20000ecoin", "200000000stake"]
+  - name: tellurian
+    coins: ["10000ecoin", "100000000stake"]
+    address: "earth147v63r83u06lpgh24medk8xf7c7v24jcf70k5q"
+validator:
+  name: earthling
+  staked: "100000000stake"
+client:
+  openapi:
+    path: "docs/static/openapi.yml"
+  vuex:
+    path: "vue/src/store"
+host:
+  rpc: ":26659"
+  p2p: ":26658"
+  prof: ":6061"
+  grpc: ":9095"
+  api: ":1318"
+  frontend: ":8081"
+  dev-ui: ":12346"
+genesis:
+  chain_id: "earth"
+init:
+  home: "$HOME/.earth"
+

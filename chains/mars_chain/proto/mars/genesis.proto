@@ -1,0 +1,11 @@
+syntax = "proto3";
+package informalsystems.mars.mars;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/informalsystems/hermes-ibc-workshop/chains/mars/x/mars/types";
+
+// GenesisState defines the mars module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+}

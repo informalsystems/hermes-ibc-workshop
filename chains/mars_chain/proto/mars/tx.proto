@@ -1,0 +1,13 @@
+syntax = "proto3";
+package informalsystems.mars.mars;
+
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/informalsystems/hermes-ibc-workshop/chains/mars/x/mars/types";
+
+// Msg defines the Msg service.
+service Msg {
+    // this line is used by starport scaffolding # proto/tx/rpc
+}
+
+// this line is used by starport scaffolding # proto/tx/message

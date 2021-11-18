@@ -1,0 +1,27 @@
+accounts:
+  - name: martian
+    coins: ["20000mcoin", "200000000stake"]
+  - name: greenman
+    coins: ["10000mcoin", "100000000stake"]
+    address: "mars15vjyqpnw7yx9e05tjgtxnu95w045w2s367c2mt"
+validator:
+  name: martian
+  staked: "100000000stake"
+client:
+  openapi:
+    path: "docs/static/openapi.yml"
+  vuex:
+    path: "vue/src/store"
+host:
+  rpc: ":26559"
+  p2p: ":26558"
+  prof: ":6062"
+  grpc: ":9096"
+  api: ":1319"
+  frontend: ":8091"
+  dev-ui: ":22346"
+genesis:
+  chain_id: "mars"
+init:
+  home: "$HOME/.mars"
+
